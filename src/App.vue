@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import HelloWorld from './components/HelloWorld.vue';
 
-export default {
-  name: 'app',
+// eslint-disable-next-line
+@Component({
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+})
+export default class App extends Vue {}
 </script>
 
 <style>
