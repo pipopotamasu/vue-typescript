@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App fuga"/>
   </div>
 </template>
 
@@ -9,12 +9,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
 
-// eslint-disable-next-line
 @Component({
   components: {
-    HelloWorld,
+  HelloWorld,
   },
-})
+  })
+
 export default class App extends Vue {}
 </script>
 

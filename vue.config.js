@@ -6,8 +6,10 @@ module.exports = {
     https: false,
     hotOnly: false,
     proxy: null, // string | Object
-    before: app => {
+    before: (app) => {
       // app is an express instance
-    }
-  }
-}
+    },
+  },
+
+  lintOnSave: false,
+};
