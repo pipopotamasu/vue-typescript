@@ -38,6 +38,9 @@ export default class HelloWorld extends Vue {
   get hoge(): string {
     return 'hoge'
   }
+  // fuga (): void {
+  //   return 1
+  // }
 }
 
 </script>
